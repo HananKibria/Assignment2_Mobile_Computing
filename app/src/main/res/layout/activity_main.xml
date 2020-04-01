@@ -68,36 +68,39 @@
 
     <EditText
         android:id="@+id/textView"
-        android:layout_width="170dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:inputType="textPersonName"
         android:hint="User Name"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="308dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/frame"
+        app:layout_constraintEnd_toStartOf="@id/Email"
         app:layout_constraintVertical_bias="0.546"
         android:background="@drawable/rectanglebox"
         android:padding="15dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="20dp" />
 
     <EditText
         android:id="@+id/Email"
-        android:layout_width="170dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:inputType="textEmailAddress"
         android:hint="Email"
 
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="308dp"
-        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@id/textView"
         app:layout_constraintTop_toBottomOf="@id/frame"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.546"
         android:background="@drawable/rectanglebox"
         android:padding="15dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"/>
 
     <EditText
         android:id="@+id/Password"
@@ -107,14 +110,15 @@
         android:hint="Password"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="308dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/Email"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintVertical_bias="0.546"
         android:background="@drawable/rectanglebox"
         android:padding="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="10dp"/>
 
     <EditText
         android:id="@+id/ConfirmPassword"
@@ -125,24 +129,26 @@
         android:hint="Confirm Password"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="308dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/Password"
         app:layout_constraintTop_toBottomOf="@id/Password"
         app:layout_constraintVertical_bias="0.546"
         android:background="@drawable/rectanglebox"
         android:padding="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="30dp"/>
+        android:layout_marginRight="10dp"/>
 
     <EditText
         android:id="@+id/month"
-        android:layout_width="107dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:inputType="number"
         android:hint="Month"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="308dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/day"
         app:layout_constraintTop_toBottomOf="@id/ConfirmPassword"
         app:layout_constraintVertical_bias="0.546"
         android:background="@drawable/rectanglebox"
@@ -152,13 +158,14 @@
 
     <EditText
         android:id="@+id/day"
-        android:layout_width="107dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:inputType="number"
         android:hint="Day"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="308dp"
         app:layout_constraintStart_toEndOf="@id/month"
+        app:layout_constraintEnd_toStartOf="@id/year"
         app:layout_constraintTop_toBottomOf="@id/ConfirmPassword"
         app:layout_constraintVertical_bias="0.546"
         android:background="@drawable/rectanglebox"
@@ -168,13 +175,14 @@
 
     <EditText
         android:id="@+id/year"
-        android:layout_width="107dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:inputType="number"
         android:hint="Year"
         tools:layout_editor_absoluteX="14dp"
         tools:layout_editor_absoluteY="308dp"
         app:layout_constraintStart_toEndOf="@id/day"
+        app:layout_constraintEnd_toEndOf="@id/ConfirmPassword"
         app:layout_constraintTop_toBottomOf="@id/ConfirmPassword"
         app:layout_constraintVertical_bias="0.546"
         android:background="@drawable/rectanglebox"
@@ -192,7 +200,7 @@
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="577dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/day"/>
