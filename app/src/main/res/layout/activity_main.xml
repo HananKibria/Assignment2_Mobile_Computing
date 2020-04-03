@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,7 +12,7 @@
     <FrameLayout
         android:id="@+id/frame"
         android:layout_width="match_parent"
-        android:layout_height="230dip"
+        android:layout_height="230dp"
         android:background="@color/frameColor"
         app:layout_constraintBottom_toTopOf="@id/textView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -69,7 +72,7 @@
     <EditText
         android:id="@+id/textView"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:hint="User Name"
         tools:layout_editor_absoluteX="14dp"
@@ -86,7 +89,7 @@
     <EditText
         android:id="@+id/Email"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:hint="Email"
 
@@ -105,7 +108,7 @@
     <EditText
         android:id="@+id/Password"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="Password"
         tools:layout_editor_absoluteX="14dp"
@@ -123,7 +126,7 @@
     <EditText
         android:id="@+id/ConfirmPassword"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:ems="15"
         android:inputType="textPassword"
         android:hint="Confirm Password"
@@ -142,7 +145,7 @@
     <EditText
         android:id="@+id/month"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Month"
         tools:layout_editor_absoluteX="14dp"
@@ -159,7 +162,7 @@
     <EditText
         android:id="@+id/day"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Day"
         tools:layout_editor_absoluteX="14dp"
@@ -176,7 +179,7 @@
     <EditText
         android:id="@+id/year"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="Year"
         tools:layout_editor_absoluteX="14dp"
@@ -217,3 +220,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
